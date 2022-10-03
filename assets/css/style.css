@@ -10,14 +10,14 @@
   --hero-height: 490px; 
   --about-height: 705px;
   --contact-height: 600px;
+  --top-footer-height: 450px;
 
   --color-header: #2C3E50;
   --color-hero: #1ABC9C;
+  --color-top-footer: #3A546D;
+  
 }
-
-
 /* utilities */
-
 .debug{
   border: 1px solid firebrick;
   background-color: bisque;
@@ -50,9 +50,6 @@ header {
   height: var(--hero-height);
   background-color: var(--color-hero);
 }
-
-
-
 /* MAIN */
 
 /* section.portfolio */
@@ -72,8 +69,22 @@ main section.portfolio > div >.row>.col{
   height: var(--contact-height);
 }
 
-
 /* FOOTER */
+/* top-footer */
+footer .top-footer{
+  background-color: var(--color-top-footer);
+  height: var(--top-footer-height);
+}
+
+footer .top-footer .row .col{
+  min-width: 130px;
+}
+
+footer .bottom-footer{
+  background-color: var(--color-header);
+  height: 110px;
+}
+
 
 @media screen and (min-width: 576px) {
   :root{
@@ -82,6 +93,13 @@ main section.portfolio > div >.row>.col{
     --contact-height: 685px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  :root{
+    --top-footer-height: 230px;
+  }
+}
+
 
 @media screen and (min-width: 1200px) {
   :root{
