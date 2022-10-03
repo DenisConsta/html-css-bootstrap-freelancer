@@ -7,6 +7,10 @@
 }
 
 :root{
+  --hero-height: 490px; 
+  --about-height: 705px;
+  --contact-height: 600px;
+
   --color-header: #2C3E50;
   --color-hero: #1ABC9C;
 }
@@ -29,12 +33,11 @@ body>*{
 }
 
 .my-container{
-  max-width: 650px;
+  max-width: 720px;
   width: 80%;
   height: 100%;
   margin: 0 auto;
 }
-
 
 /* HEADER */
 header {
@@ -44,11 +47,44 @@ header {
 
 /* HERO */
 .hero{
-  height: 590px;
+  height: var(--hero-height);
   background-color: var(--color-hero);
 }
 
 
+
 /* MAIN */
 
+/* section.portfolio */
+main section.portfolio > div >.row>.col{
+  background-color: cornflowerblue;
+  margin-bottom: 30px;
+}
+
+/* section.about */
+.about{
+  height: var(--about-height);
+  background-color: var(--color-hero);
+}
+
+/* section.contact */
+.contact{
+  height: var(--contact-height);
+}
+
+
 /* FOOTER */
+
+@media screen and (min-width: 576px) {
+  :root{
+    --hero-height: 585px;
+    --about-height: 545px;
+    --contact-height: 685px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root{
+    --about-height: 490px;
+  }
+}
