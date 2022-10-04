@@ -71,7 +71,8 @@ header nav .nav-link{
 }
 
 /* PORTFOLIO  */
-.portfolio .star.dark .line{
+.portfolio .star.dark .line,
+.contact .line{
   background-color: black;
 }
 
@@ -86,9 +87,36 @@ header nav .nav-link{
   border-radius: 10px;
 }
 
+/* ABOUT */
 .about{
   background-color: #31BC9C;
   color: white;
+}
+
+/* CONTACT */
+.contact{
+  color: black;
+}
+
+.contact form input::placeholder,
+form textarea + label{
+  color: black;
+  font-size: 1.2rem;
+}
+
+.form-floating > .form-control, .form-floating > .form-control-plaintext, .form-floating > .form-select{
+  height: 170px;
+}
+
+.contact form .form-control{
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid grey;
+}
+
+.contact form .btn-primary{
+  background-color:#31BC9C;
+  border: none;
 }
 
 .form{
@@ -98,8 +126,12 @@ header nav .nav-link{
 
 /* FOOTER */
 
-footer{
+footer .footer-top{
   background-color:#3A546D;
+}
+
+footer .footer-bottom{
+  background-color: var(--color-header);
 }
 
 @media screen and (min-width: 776px){
