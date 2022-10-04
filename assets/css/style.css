@@ -9,24 +9,10 @@
   --color-header: #2C3E50;
 }
 
-/* utilities */
-/* 
-[class ^= "container"],
-[class ^= "col"]{
-  background-color: bisque;
-  border: 1px solid firebrick;
-  min-height: 50px;
-} */
-
-
 .debug{
   border: 1px solid firebrick;
   background-color: bisque;
 }
-
-/* .viole{
-  background-color: blueviolet ;
-} */
 
 .my-container{
   width: 60%;
@@ -48,7 +34,6 @@ header nav .nav-link{
 }
 
 /* JUMBOTRON */
-
 .hero{
   height: var(--header-height);
   background-color: #31BC9C;
@@ -75,7 +60,6 @@ header nav .nav-link{
 .contact .line{
   background-color: black;
 }
-
 
 /* MAIN */
 
@@ -126,12 +110,40 @@ form textarea + label{
 
 /* FOOTER */
 
+footer{
+  color: white;
+}
+
 footer .footer-top{
   background-color:#3A546D;
 }
 
+footer .footer-top p{
+  font-size: 1.2rem;
+}
+
+.footer-top .icons i{
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.footer-top .icons i:first-child{
+  padding: 10px 13px;
+}
+
+.footer-top .icons i:nth-child(2){
+  padding: 10px 7px;
+}
+
+
 footer .footer-bottom{
   background-color: var(--color-header);
+}
+
+.footer-bottom p{
+  margin: 0;
 }
 
 @media screen and (min-width: 776px){
