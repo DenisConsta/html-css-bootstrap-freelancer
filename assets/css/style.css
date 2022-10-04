@@ -3,6 +3,7 @@
 :root{
   /* dim*/
   --header-height: 490px;
+  --col-img: 385px;
 
   /* palette */
   --color-header: #2C3E50;
@@ -67,14 +68,22 @@ header nav .nav-link{
 
 .star [class^="bi-"]::before, [class*=" bi-"]::before{
   font-size: 30px;
-  color: white;
 }
+
+/* PORTFOLIO  */
+.portfolio .star.dark .line{
+  background-color: black;
+}
+
 
 /* MAIN */
 
 .cards .col{
-  /* DEBUG */
-  height: 150px;
+  padding-bottom: 30px;
+}
+
+.cards .col img{
+  border-radius: 10px;
 }
 
 .about{
@@ -95,6 +104,7 @@ footer{
 @media screen and (min-width: 776px){
   :root{
     --header-height: 585px;
+    --col-img: 330px;
   }
 
   .navbar-brand{
