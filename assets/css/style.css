@@ -1,12 +1,16 @@
 
 /* GENERAL */
 :root{
+  /* dim*/
+  --header-height: 490px;
+
+  /* palette */
   --color-header: #2C3E50;
 }
 
 /* utilities */
-
-/* [class ^= "container"],
+/* 
+[class ^= "container"],
 [class ^= "col"]{
   background-color: bisque;
   border: 1px solid firebrick;
@@ -19,6 +23,9 @@
   background-color: bisque;
 }
 
+/* .viole{
+  background-color: blueviolet ;
+} */
 
 .my-container{
   width: 60%;
@@ -41,9 +48,25 @@ header nav .nav-link{
 
 /* JUMBOTRON */
 
-.jumbotron{
-  height: 490px;
+.hero{
+  height: var(--header-height);
   background-color: #31BC9C;
+}
+
+.hero img{
+  height: 265px;
+}
+
+/* STAR  */
+.line{
+  width: 100%;
+  height: 5px;
+  background-color: white;
+}
+
+.star [class^="bi-"]::before, [class*=" bi-"]::before{
+  font-size: 30px;
+  color: white;
 }
 
 /* MAIN */
@@ -69,6 +92,10 @@ footer{
 }
 
 @media screen and (min-width: 776px){
+  :root{
+    --header-height: 585px;
+  }
+
   .navbar-brand{
     font-size: 25px;
   }
