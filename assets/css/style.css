@@ -1,108 +1,75 @@
 
 /* GENERAL */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root{
-  --hero-height: 490px; 
-  --about-height: 705px;
-  --contact-height: 600px;
-  --top-footer-height: 450px;
-
   --color-header: #2C3E50;
-  --color-hero: #1ABC9C;
-  --color-top-footer: #3A546D;
-  
 }
+
 /* utilities */
+
+/* [class ^= "container"],
+[class ^= "col"]{
+  background-color: bisque;
+  border: 1px solid firebrick;
+  min-height: 50px;
+} */
+
+
 .debug{
   border: 1px solid firebrick;
   background-color: bisque;
 }
 
-[class ^= "container"],
-[class ^= "col"],
-.my-container,
-body>*{
-  border: 1px solid firebrick;
-  background-color: bisque;
-  min-height: 90px;
-}
 
 .my-container{
-  max-width: 720px;
-  width: 80%;
-  height: 100%;
+  width: 60%;
   margin: 0 auto;
 }
 
 /* HEADER */
-header {
+header{
   height: 90px;
   background-color: var(--color-header);
 }
 
-/* HERO */
-.hero{
-  height: var(--hero-height);
-  background-color: var(--color-hero);
+header nav .navbar-toggler{
+  border: 1px solid white;
 }
+
+header nav .nav-link{
+  color: white;
+}
+
+/* JUMBOTRON */
+
+.jumbotron{
+  height: 490px;
+  background-color: #31BC9C;
+}
+
 /* MAIN */
 
-/* section.portfolio */
-main section.portfolio > div >.row>.col{
-  background-color: cornflowerblue;
-  margin-bottom: 30px;
+.cards .col{
+  /* DEBUG */
+  height: 150px;
 }
 
-/* section.about */
 .about{
-  height: var(--about-height);
-  background-color: var(--color-hero);
+  background-color: #31BC9C;
 }
 
-/* section.contact */
-.contact{
-  height: var(--contact-height);
+.form{
+  /* DEBUG */
+  height: 500px;
 }
 
 /* FOOTER */
-/* top-footer */
-footer .top-footer{
-  background-color: var(--color-top-footer);
-  height: var(--top-footer-height);
+
+footer{
+  background-color:#3A546D;
 }
 
-footer .top-footer .row .col{
-  min-width: 130px;
-}
-
-footer .bottom-footer{
-  background-color: var(--color-header);
-  height: 110px;
-}
-
-
-@media screen and (min-width: 576px) {
-  :root{
-    --hero-height: 585px;
-    --about-height: 545px;
-    --contact-height: 685px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  :root{
-    --top-footer-height: 230px;
-  }
-}
-
-
-@media screen and (min-width: 1200px) {
-  :root{
-    --about-height: 490px;
+@media screen and (min-width: 776px){
+  .navbar-brand{
+    font-size: 25px;
   }
 }
